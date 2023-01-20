@@ -13,5 +13,30 @@
   <ItemGroup>
     <None Include="TopmoreKitCore.props" />
   </ItemGroup>
+   <ItemDefinitionGroup>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AtaSmart.cpp" />
+    <ClCompile Include="NVMeInterpreter.cpp" />
+    <ClCompile Include="OsInfoFx.cpp" />
+    <ClCompile Include="SlotSpeedGetter.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="UtilityFx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AtaSmart.h" />
+    <ClInclude Include="CommonFx.h" />
+    <ClInclude Include="DnpService.h" />
+    <ClInclude Include="NVMeInterpreter.h" />
+    <ClInclude Include="OsInfoFx.h" />
+    <ClInclude Include="SlotSpeedGetter.h" />
+    <ClInclude Include="SPTIUtil.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StorageQuery.h" />
+    <ClInclude Include="UtilityFx.h" />
+  </ItemGroup>
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
 </Project>

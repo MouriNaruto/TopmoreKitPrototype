@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="TopmoreKitCore.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AtaSmart.cpp" />
+    <ClCompile Include="SlotSpeedGetter.cpp" />
+    <ClCompile Include="NVMeInterpreter.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="OsInfoFx.cpp" />
+    <ClCompile Include="UtilityFx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AtaSmart.h" />
+    <ClInclude Include="SPTIUtil.h" />
+    <ClInclude Include="SlotSpeedGetter.h" />
+    <ClInclude Include="NVMeInterpreter.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StorageQuery.h" />
+    <ClInclude Include="CommonFx.h" />
+    <ClInclude Include="OsInfoFx.h" />
+    <ClInclude Include="UtilityFx.h" />
+    <ClInclude Include="DnpService.h" />
+  </ItemGroup>
+</Project>
