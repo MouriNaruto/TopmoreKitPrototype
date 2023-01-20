@@ -5,7 +5,7 @@
 //      License : The MIT License
 /*---------------------------------------------------------------------------*/
 
-#include "../stdafx.h"
+#include "stdafx.h"
 #include "OsInfoFx.h"
 #include "UtilityFx.h"
 

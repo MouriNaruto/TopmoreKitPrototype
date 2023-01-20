@@ -9,7 +9,7 @@
 #include "stdafx.h"
 #include <comutil.h>
 #include "AtaSmart.h"
-#include "Priscilla/UtilityFx.h"
+#include "UtilityFx.h"
 #include <wbemcli.h>
 
 #include "DnpService.h"

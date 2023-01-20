@@ -44,8 +44,8 @@
 
 #include <afxdhtml.h>			// HTML Dialogs
 
-#include "DHtmlDialogEx.h"		// CDHtmlDialogEx by hiyohiyo
-#include "DHtmlMainDialog.h"	// CDHtmlMainDialog by hiyohiyo
+//#include "DHtmlDialogEx.h"		// CDHtmlDialogEx by hiyohiyo
+//#include "DHtmlMainDialog.h"	// CDHtmlMainDialog by hiyohiyo
 
 #include <comutil.h>
 
