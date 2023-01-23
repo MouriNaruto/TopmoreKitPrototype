@@ -8,7 +8,15 @@
  * DEVELOPER: Mouri_Naruto (Mouri_Naruto AT Outlook.com)
  */
 
-#include <Windows.h>
+//#include <Windows.h>
+
+#include <stdafx.h>
+
+//ole32.lib
+
+#pragma comment(lib, "comsupp.lib")
+
+#include <AtaSmart.h>
 
 int WINAPI wWinMain(
     _In_ HINSTANCE hInstance,
@@ -21,11 +29,31 @@ int WINAPI wWinMain(
     UNREFERENCED_PARAMETER(lpCmdLine);
     UNREFERENCED_PARAMETER(nShowCmd);
 
-    ::MessageBoxW(
+    /*::MessageBoxW(
         nullptr,
         L"Hello World!\n",
         L"TOPMORE Kit",
-        0);
+        0);*/
+
+    ::CoInitialize(nullptr);
+
+    CAtaSmart AtaSmart;
+
+    BOOL UseWmi = TRUE;
+    BOOL AdvancedDiskSearch = FALSE;
+    BOOL WorkaroundHD204UI = FALSE;
+    BOOL WorkaroundAdataSsd = TRUE;
+    BOOL HideNoSmartDisk = FALSE;
+
+    AtaSmart.Init(
+        UseWmi,
+        AdvancedDiskSearch,
+        nullptr,
+        WorkaroundHD204UI,
+        WorkaroundAdataSsd,
+        HideNoSmartDisk);
+
+    auto x = AtaSmart.vars[0];
 
     return 0;
 }
