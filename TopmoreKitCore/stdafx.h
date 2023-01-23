@@ -33,16 +33,16 @@
 #define _AFX_ALL_WARNINGS
 
 #include <afxwin.h>         // MFC core and standard component
-#include <afxext.h>         // Extended MFC
+//#include <afxext.h>         // Extended MFC
 
-#ifndef _AFX_NO_OLE_SUPPORT
-#include <afxdtctl.h>		// MFC IE4 Common Control support
-#endif
-#ifndef _AFX_NO_AFXCMN_SUPPORT
-#include <afxcmn.h>			// MFC Windows Common Control support
-#endif // _AFX_NO_AFXCMN_SUPPORT
+//#ifndef _AFX_NO_OLE_SUPPORT
+//#include <afxdtctl.h>		// MFC IE4 Common Control support
+//#endif
+//#ifndef _AFX_NO_AFXCMN_SUPPORT
+//#include <afxcmn.h>			// MFC Windows Common Control support
+//#endif // _AFX_NO_AFXCMN_SUPPORT
 
-#include <afxdhtml.h>			// HTML Dialogs
+//#include <afxdhtml.h>			// HTML Dialogs
 
 //#include "DHtmlDialogEx.h"		// CDHtmlDialogEx by hiyohiyo
 //#include "DHtmlMainDialog.h"	// CDHtmlMainDialog by hiyohiyo
@@ -52,7 +52,7 @@
 #include "CommonFx.h"
 #include "UtilityFx.h"
 
-#pragma comment(linker,"/manifestdependency:\"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
+//#pragma comment(linker,"/manifestdependency:\"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 #pragma warning(disable : 4996)
 
 //------------------------------------------------
