@@ -21,6 +21,11 @@
   </PropertyGroup>
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.props" />
   <Import Project="..\TopmoreKitCore\TopmoreKitCore.props" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="TopmoreKit.cpp" />
   </ItemGroup>

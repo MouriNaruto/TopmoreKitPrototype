@@ -13,7 +13,7 @@
   <ItemGroup>
     <None Include="TopmoreKitCore.props" />
   </ItemGroup>
-   <ItemDefinitionGroup>
+  <ItemDefinitionGroup>
     <ClCompile>
       <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
