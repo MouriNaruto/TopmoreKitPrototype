@@ -8,6 +8,11 @@
 
 #pragma once
 
+#include <Windows.h>
+
+#include <atlcoll.h>
+#include <atlstr.h>
+
 #include "winioctl.h"
 #include "SPTIUtil.h"
 #include "SlotSpeedGetter.h"

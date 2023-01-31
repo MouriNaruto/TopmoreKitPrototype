@@ -8,11 +8,7 @@
  * DEVELOPER: Mouri_Naruto (Mouri_Naruto AT Outlook.com)
  */
 
-//#include <Windows.h>
-
-#include <stdafx.h>
-
-//ole32.lib
+#include <Windows.h>
 
 #pragma comment(lib, "comsupp.lib")
 
@@ -27,7 +23,7 @@ int main(int argc, char* argv[])
 
     QApplication Application(argc, argv);
 
-    /*CAtaSmart AtaSmart;
+    CAtaSmart AtaSmart;
 
     BOOL UseWmi = TRUE;
     BOOL AdvancedDiskSearch = FALSE;
@@ -43,7 +39,7 @@ int main(int argc, char* argv[])
         WorkaroundAdataSsd,
         HideNoSmartDisk);
 
-    auto x = AtaSmart.vars[0];*/
+    auto x = AtaSmart.vars[0];
 
     QWidget Widget;
     Widget.setWindowTitle("TOPMORE Kit");
