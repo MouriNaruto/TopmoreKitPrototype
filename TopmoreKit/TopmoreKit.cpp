@@ -18,26 +18,16 @@
 
 #include <AtaSmart.h>
 
-int WINAPI wWinMain(
-    _In_ HINSTANCE hInstance,
-    _In_opt_ HINSTANCE hPrevInstance,
-    _In_ LPWSTR lpCmdLine,
-    _In_ int nShowCmd)
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QWidget>
+
+int main(int argc, char* argv[])
 {
-    UNREFERENCED_PARAMETER(hInstance);
-    UNREFERENCED_PARAMETER(hPrevInstance);
-    UNREFERENCED_PARAMETER(lpCmdLine);
-    UNREFERENCED_PARAMETER(nShowCmd);
-
-    /*::MessageBoxW(
-        nullptr,
-        L"Hello World!\n",
-        L"TOPMORE Kit",
-        0);*/
-
     ::CoInitialize(nullptr);
 
-    CAtaSmart AtaSmart;
+    QApplication Application(argc, argv);
+
+    /*CAtaSmart AtaSmart;
 
     BOOL UseWmi = TRUE;
     BOOL AdvancedDiskSearch = FALSE;
@@ -53,7 +43,11 @@ int WINAPI wWinMain(
         WorkaroundAdataSsd,
         HideNoSmartDisk);
 
-    auto x = AtaSmart.vars[0];
+    auto x = AtaSmart.vars[0];*/
 
-    return 0;
+    QWidget Widget;
+    Widget.setWindowTitle("TOPMORE Kit");
+    Widget.show();
+
+    return Application.exec();
 }
