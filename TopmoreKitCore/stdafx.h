@@ -27,5 +27,4 @@ BOOL AfxExtractSubString(
 
 #include <comutil.h>
 
-#include "CommonFx.h"
 #include "UtilityFx.h"

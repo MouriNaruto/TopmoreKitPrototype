@@ -18,7 +18,6 @@
     <ClInclude Include="NVMeInterpreter.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StorageQuery.h" />
-    <ClInclude Include="CommonFx.h" />
     <ClInclude Include="OsInfoFx.h" />
     <ClInclude Include="UtilityFx.h" />
     <ClInclude Include="DnpService.h" />

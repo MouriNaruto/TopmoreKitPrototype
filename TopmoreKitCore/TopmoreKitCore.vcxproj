@@ -27,7 +27,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AtaSmart.h" />
-    <ClInclude Include="CommonFx.h" />
     <ClInclude Include="DnpService.h" />
     <ClInclude Include="NVMeInterpreter.h" />
     <ClInclude Include="OsInfoFx.h" />
