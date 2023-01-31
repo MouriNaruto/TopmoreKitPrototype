@@ -318,7 +318,7 @@ public:
 		CMD_TYPE_CYPRESS,
 		CMD_TYPE_SAT_ASM1352R,	// AMS1352 2nd drive
 		CMD_TYPE_CSMI,				// CSMI = Common Storage Management Interface
-		CMD_TYPE_CSMI_PHYSICAL_DRIVE, // CSMI = Common Storage Management Interface 
+		CMD_TYPE_CSMI_PHYSICAL_DRIVE, // CSMI = Common Storage Management Interface
 		CMD_TYPE_WMI,
 		CMD_TYPE_NVME_SAMSUNG,
 		CMD_TYPE_NVME_INTEL,
@@ -354,7 +354,7 @@ public:
 		INTERFACE_TYPE_USB,
 		INTERFACE_TYPE_IEEE1394,
 	//	INTERFACE_TYPE_UASP,
-		INTERFACE_TYPE_SCSI, 
+		INTERFACE_TYPE_SCSI,
 		INTERFACE_TYPE_NVME,
 		INTERFACE_TYPE_AMD_RC2,// +AMD_RC2
 	//	INTERFACE_TYPE_USB_NVME,
@@ -1354,7 +1354,7 @@ protected:
 		ULONG uFlags;
 		ULONG uDataLength;
 	} CSMI_SAS_STP_PASSTHRU, *PCSMI_SAS_STP_PASSTHRU;
-	
+
 	typedef struct _CSMI_SAS_STP_PASSTHRU_STATUS
 	{
 		UCHAR bConnectionStatus;
@@ -1363,7 +1363,7 @@ protected:
 		ULONG uSCR[16];
 		ULONG uDataBytes;
 	} CSMI_SAS_STP_PASSTHRU_STATUS, *PCSMI_SAS_STP_PASSTHRU_STATUS;
-	
+
 	typedef struct _CSMI_SAS_STP_PASSTHRU_BUFFER
 	{
 		SRB_IO_CONTROL IoctlHeader;
@@ -1839,7 +1839,7 @@ public:
 
 		DWORD				DiskStatus{};
 		DWORD				DriveLetterMap{};
-		// 
+		//
 		INT 				AlarmTemperature{};
 		BOOL				AlarmHealthStatus{};
 
@@ -1889,19 +1889,19 @@ public:
 		DWORD	UsbProductId{};
 	};
 
-	CArray<ATA_SMART_INFO, ATA_SMART_INFO> vars;
-	CArray<EXTERNAL_DISK_INFO, EXTERNAL_DISK_INFO> externals;
+	CAtlArray<ATA_SMART_INFO> vars;
+	CAtlArray<EXTERNAL_DISK_INFO> externals;
 
-	CStringArray m_IdeController;
-	CStringArray m_ScsiController;
-	CStringArray m_UsbController;
+	CAtlArray<CString> m_IdeController;
+	CAtlArray<CString> m_ScsiController;
+	CAtlArray<CString> m_UsbController;
 	CString m_ControllerMap;
-	CStringArray m_BlackIdeController;
-	CStringArray m_BlackScsiController;
-	CStringArray m_SiliconImageController;
-	CStringArray m_UASPController;
-	CArray<DWORD, DWORD> m_SiliconImageControllerType;
-	CArray<INT, INT> m_BlackPhysicalDrive;
+	CAtlArray<CString> m_BlackIdeController;
+	CAtlArray<CString> m_BlackScsiController;
+	CAtlArray<CString> m_SiliconImageController;
+	CAtlArray<CString> m_UASPController;
+	CAtlArray<DWORD> m_SiliconImageControllerType;
+	CAtlArray<INT> m_BlackPhysicalDrive;
 
 	BOOL IsAdvancedDiskSearch = FALSE;
 	BOOL IsEnabledWmi = FALSE;
@@ -1974,7 +1974,7 @@ protected:
 
 	BOOL DoIdentifyDeviceNVMeASMedia(INT physicalDriveId, INT scsiPort, INT scsiTargetId, IDENTIFY_DEVICE* identify);
 	BOOL GetSmartAttributeNVMeASMedia(INT physicalDriveId, INT scsiPort, INT scsiTargetId, ATA_SMART_INFO* asi);
-	
+
 	BOOL DoIdentifyDeviceNVMeRealtek(INT physicalDriveId, INT scsiPort, INT scsiTargetId, IDENTIFY_DEVICE* data);
 	BOOL GetSmartAttributeNVMeRealtek(INT physicalDriveId, INT scsiPort, INT scsiTargetId, ATA_SMART_INFO* asi);
 
@@ -2041,7 +2041,7 @@ protected:
 
 	BOOL FillSmartData(ATA_SMART_INFO* asi);
 	BOOL FillSmartThreshold(ATA_SMART_INFO* asi);
-	
+
 	VOID CheckSsdSupport(ATA_SMART_INFO &asi);
 	BOOL IsSsdOld(ATA_SMART_INFO &asi);
 	BOOL IsSsdMtron(ATA_SMART_INFO &asi);

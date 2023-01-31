@@ -28,11 +28,11 @@
 #define _WIN32_IE 0x0600
 #endif
 
-#define _AFX_NO_MFC_CONTROLS_IN_DIALOGS
+//#define _AFX_NO_MFC_CONTROLS_IN_DIALOGS
 #define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
-#define _AFX_ALL_WARNINGS
+//#define _AFX_ALL_WARNINGS
 
-#include <afxwin.h>         // MFC core and standard component
+//#include <afxwin.h>         // MFC core and standard component
 //#include <afxext.h>         // Extended MFC
 
 //#ifndef _AFX_NO_OLE_SUPPORT
@@ -46,6 +46,27 @@
 
 //#include "DHtmlDialogEx.h"		// CDHtmlDialogEx by hiyohiyo
 //#include "DHtmlMainDialog.h"	// CDHtmlMainDialog by hiyohiyo
+
+#include <Windows.h>
+
+#include <atlcoll.h>
+#include <atlstr.h>
+
+int AfxMessageBox(
+    LPCTSTR lpszText,
+    UINT nType = MB_OK,
+    UINT nIDHelp = 0);
+
+int AfxMessageBox(
+    UINT nIDPrompt,
+    UINT nType = MB_OK,
+    UINT nIDHelp = (UINT)-1);
+
+BOOL AfxExtractSubString(
+    CString& rString,
+    LPCTSTR lpszFullString,
+    int iSubString,
+    TCHAR chSep);
 
 #include <comutil.h>
 
