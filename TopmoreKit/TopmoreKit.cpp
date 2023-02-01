@@ -17,6 +17,8 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QWidget>
 
+#include "TopmoreKitMainWindow.h"
+
 int main(int argc, char* argv[])
 {
     ::CoInitialize(nullptr);
@@ -41,9 +43,8 @@ int main(int argc, char* argv[])
 
     auto x = AtaSmart.vars[0];
 
-    QWidget Widget;
-    Widget.setWindowTitle("TOPMORE Kit");
-    Widget.show();
+    TopmoreKitMainWindow MainWindow;
+    MainWindow.show();
 
     return Application.exec();
 }

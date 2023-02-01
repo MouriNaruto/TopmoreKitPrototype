@@ -50,9 +50,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="TopmoreKit.cpp" />
+    <ClCompile Include="TopmoreKitMainWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="TopmoreKit.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="TopmoreKitMainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="TopmoreKitMainWindow.ui" />
   </ItemGroup>
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

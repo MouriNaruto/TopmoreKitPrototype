@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Manifest Include="TopmoreKit.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TopmoreKit.cpp" />
+    <ClCompile Include="TopmoreKitMainWindow.cpp">
+      <Filter>TopmoreKitMainWindow</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="TopmoreKitMainWindow">
+      <UniqueIdentifier>{b738f1ce-7c8b-4e54-8f6a-af81e0ded457}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="TopmoreKitMainWindow.h">
+      <Filter>TopmoreKitMainWindow</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="TopmoreKitMainWindow.ui">
+      <Filter>TopmoreKitMainWindow</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>
