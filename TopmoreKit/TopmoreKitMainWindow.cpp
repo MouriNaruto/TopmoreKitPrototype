@@ -2,6 +2,7 @@
 
 #include "TopmoreKitCustomTabStyle.h"
 
+#include "TopmoreKitSSDManagerTab.h"
 #include "TopmoreKitSettingsTab.h"
 
 TopmoreKitMainWindow::TopmoreKitMainWindow(QWidget *parent)
@@ -11,6 +12,10 @@ TopmoreKitMainWindow::TopmoreKitMainWindow(QWidget *parent)
 
     ui.FeatureTabWidget->tabBar()->setStyle(
         new TopmoreKitCustomTabStyle());
+
+    ui.FeatureTabWidget->addTab(
+        new TopmoreKitSSDManagerTab(),
+        u8"SSD");
 
     ui.FeatureTabWidget->addTab(
         new TopmoreKitSettingsTab(),
