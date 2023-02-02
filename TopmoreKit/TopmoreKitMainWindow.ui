@@ -38,8 +38,11 @@
     </property>
     <item>
      <widget class="QTabWidget" name="FeatureTabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
+      </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="SSDManagerTab">
        <attribute name="title">
