@@ -1,6 +1,8 @@
 ﻿# TOPMORE Kit 项目需求
 
-> 此部分内容作为TMK「**Topmore Kit**」项目的进度追踪与展示
+此部分内容作为TMK「**Topmore Kit**」项目的进度追踪与展示
+
+项目设计稿参考：https://www.xiaopiu.com/web/byId?type=project&id=63aeab608837c83eba1578db
 
 ## 系统要求
 
