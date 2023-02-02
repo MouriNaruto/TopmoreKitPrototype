@@ -10,14 +10,14 @@ TopmoreKitMainWindow::TopmoreKitMainWindow(QWidget *parent)
 {
 	ui.setupUi(this);
 
-    ui.FeatureTabWidget->tabBar()->setStyle(
+    this->ui.FeatureTabWidget->tabBar()->setStyle(
         new TopmoreKitCustomTabStyle());
 
-    ui.FeatureTabWidget->addTab(
+    this->ui.FeatureTabWidget->addTab(
         new TopmoreKitSSDManagerTab(),
         u8"SSD");
 
-    ui.FeatureTabWidget->addTab(
+    this->ui.FeatureTabWidget->addTab(
         new TopmoreKitSettingsTab(),
         u8"设置");
 }
