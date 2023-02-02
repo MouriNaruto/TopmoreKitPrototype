@@ -50,6 +50,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="TopmoreKit.cpp" />
+    <ClCompile Include="TopmoreKitCustomTabStyle.cpp" />
     <ClCompile Include="TopmoreKitMainWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="TopmoreKitMainWindow.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TopmoreKitCustomTabStyle.h" />
   </ItemGroup>
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

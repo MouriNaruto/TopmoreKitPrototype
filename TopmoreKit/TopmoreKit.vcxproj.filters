@@ -8,10 +8,16 @@
     <ClCompile Include="TopmoreKitMainWindow.cpp">
       <Filter>TopmoreKitMainWindow</Filter>
     </ClCompile>
+    <ClCompile Include="TopmoreKitCustomTabStyle.cpp">
+      <Filter>TopmoreKitCustomTabStyle</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TopmoreKitMainWindow">
       <UniqueIdentifier>{b738f1ce-7c8b-4e54-8f6a-af81e0ded457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TopmoreKitCustomTabStyle">
+      <UniqueIdentifier>{503f5feb-0cce-462e-98ee-a813ed741ee4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -23,5 +29,10 @@
     <QtUic Include="TopmoreKitMainWindow.ui">
       <Filter>TopmoreKitMainWindow</Filter>
     </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TopmoreKitCustomTabStyle.h">
+      <Filter>TopmoreKitCustomTabStyle</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
