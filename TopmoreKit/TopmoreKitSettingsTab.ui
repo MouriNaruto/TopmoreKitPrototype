@@ -223,7 +223,7 @@
       <number>0</number>
      </property>
      <item>
-      <widget class="QPlainTextEdit" name="plainTextEdit_3">
+      <widget class="QPlainTextEdit" name="SystemInfoPlainTextEdit">
        <property name="frameShape">
         <enum>QFrame::NoFrame</enum>
        </property>
