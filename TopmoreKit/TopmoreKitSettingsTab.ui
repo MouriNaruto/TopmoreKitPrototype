@@ -289,7 +289,7 @@ DirectX版本：Direct12
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_11">
+        <widget class="QPushButton" name="WebsitePushButton">
          <property name="minimumSize">
           <size>
            <width>120</width>
@@ -308,7 +308,7 @@ DirectX版本：Direct12
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_12">
+        <widget class="QPushButton" name="SupportPushButton">
          <property name="minimumSize">
           <size>
            <width>120</width>
