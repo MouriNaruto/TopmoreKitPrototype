@@ -3,7 +3,7 @@
 #include <winrt/base.h>
 
 #include <Wbemidl.h>
-//#pragma comment(lib, "wbemuuid.lib")
+#pragma comment(lib, "wbemuuid.lib")
 
 #include <dxdiag.h>
 #pragma comment(lib, "dxguid.lib")

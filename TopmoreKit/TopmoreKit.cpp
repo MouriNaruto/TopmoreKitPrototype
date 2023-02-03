@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
 
     QApplication Application(argc, argv);
 
-    CAtaSmart AtaSmart;
+    /*CAtaSmart AtaSmart;
 
     BOOL UseWmi = TRUE;
     BOOL AdvancedDiskSearch = FALSE;
@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
         WorkaroundAdataSsd,
         HideNoSmartDisk);
 
-    auto x = AtaSmart.vars[0];
+    auto x = AtaSmart.vars[0];*/
 
     TopmoreKitMainWindow MainWindow;
     MainWindow.show();
