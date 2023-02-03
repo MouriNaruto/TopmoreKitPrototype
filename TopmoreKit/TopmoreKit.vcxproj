@@ -54,6 +54,7 @@
     <ClCompile Include="TopmoreKitCustomTabStyle.cpp" />
     <ClCompile Include="TopmoreKitMainWindow.cpp" />
     <ClCompile Include="TopmoreKitSettingsTab.cpp" />
+    <ClCompile Include="TopmoreKitSSDDeviceItem.cpp" />
     <ClCompile Include="TopmoreKitSSDManagerTab.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -65,10 +66,12 @@
   <ItemGroup>
     <QtUic Include="TopmoreKitMainWindow.ui" />
     <QtUic Include="TopmoreKitSettingsTab.ui" />
+    <QtUic Include="TopmoreKitSSDDeviceItem.ui" />
     <QtUic Include="TopmoreKitSSDManagerTab.ui" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TopmoreKitCustomTabStyle.h" />
+    <QtMoc Include="TopmoreKitSSDDeviceItem.h" />
     <QtMoc Include="TopmoreKitSSDManagerTab.h" />
     <QtMoc Include="TopmoreKitSettingsTab.h" />
   </ItemGroup>

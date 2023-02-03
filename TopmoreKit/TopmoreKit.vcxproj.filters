@@ -17,6 +17,9 @@
     <ClCompile Include="TopmoreKitSSDManagerTab.cpp">
       <Filter>TopmoreKitSSDManagerTab</Filter>
     </ClCompile>
+    <ClCompile Include="TopmoreKitSSDDeviceItem.cpp">
+      <Filter>TopmoreKitSSDDeviceItem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TopmoreKitMainWindow">
@@ -31,6 +34,9 @@
     <Filter Include="TopmoreKitSSDManagerTab">
       <UniqueIdentifier>{dfd67e2d-a753-43e5-bd3a-e90316f4df75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TopmoreKitSSDDeviceItem">
+      <UniqueIdentifier>{9bec1a0e-f583-4c82-bda1-02d223b0fa23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="TopmoreKitMainWindow.h">
@@ -42,6 +48,9 @@
     <QtMoc Include="TopmoreKitSSDManagerTab.h">
       <Filter>TopmoreKitSSDManagerTab</Filter>
     </QtMoc>
+    <QtMoc Include="TopmoreKitSSDDeviceItem.h">
+      <Filter>TopmoreKitSSDDeviceItem</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="TopmoreKitMainWindow.ui">
@@ -52,6 +61,9 @@
     </QtUic>
     <QtUic Include="TopmoreKitSSDManagerTab.ui">
       <Filter>TopmoreKitSSDManagerTab</Filter>
+    </QtUic>
+    <QtUic Include="TopmoreKitSSDDeviceItem.ui">
+      <Filter>TopmoreKitSSDDeviceItem</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
