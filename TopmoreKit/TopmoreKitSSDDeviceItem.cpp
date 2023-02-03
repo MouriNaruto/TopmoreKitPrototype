@@ -61,6 +61,9 @@ TopmoreKitSSDDeviceItem::TopmoreKitSSDDeviceItem(QWidget *parent)
 
     this->ui.FeaturesTabWidget->tabBar()->setStyle(
         new TopmoreKitCustomTabStyle());
+
+    this->ui.FeaturesTabWidget->removeTab(3);
+    this->ui.FeaturesTabWidget->removeTab(2);
 }
 
 TopmoreKitSSDDeviceItem::~TopmoreKitSSDDeviceItem()
