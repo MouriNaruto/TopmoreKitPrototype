@@ -159,7 +159,7 @@ void TopmoreKitSSDDeviceItem::UpdateInformation(
         delete Item;
     }
 
-    {
+    /*{
         QPushButton* PartitionButton = new QPushButton();
 
         PartitionButton->setMinimumSize(QSize(0, 64));
@@ -202,5 +202,5 @@ void TopmoreKitSSDDeviceItem::UpdateInformation(
         PartitionButton->setText(u8"Backup (G:) 1300 GB\nNTFS");
 
         this->ui.PartitionTableLayout->addWidget(PartitionButton);
-    }
+    }*/
 }
