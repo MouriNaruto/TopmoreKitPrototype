@@ -126,21 +126,10 @@ std::wstring GetSystemInformation()
             CurrentBuild,
             &CurrentBuildLength));
 
-        DWORD UBR = 0;
-        DWORD UBRLength = sizeof(DWORD);
-        winrt::check_win32(::RegGetValueW(
-            HKEY_LOCAL_MACHINE,
-            L"SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
-            L"UBR",
-            RRF_RT_REG_DWORD,
-            nullptr,
-            &UBR,
-            &UBRLength));
 
         SystemBuild = std::format(
-            L"{}.{}",
-            CurrentBuild,
-            UBR);
+            L"{}",
+            CurrentBuild);
     }
 
     {
