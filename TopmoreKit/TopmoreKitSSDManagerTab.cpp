@@ -43,10 +43,17 @@ TopmoreKitSSDManagerTab::TopmoreKitSSDManagerTab(QWidget *parent)
     for (size_t i = 0; i < DeviceCount; ++i)
     {
         CAtaSmart::ATA_SMART_INFO& Current = AtaSmart.vars[i];
-        if (0 != Current.Model.Find(L"TOPMORE"))
+        if (Current.SmartKeyName != L"SmartSsd" &&
+            Current.SmartKeyName != L"SmartNVMe")
         {
             continue;
         }
+        // 数月后的修订
+        // 为了让其他人的设备也能看到效果，于是暂不限定达墨
+        /*if (0 != Current.Model.Find(L"TOPMORE"))
+        {
+            continue;
+        }*/
         
         TopmoreKitSSDDeviceItem* CurrentUI = new TopmoreKitSSDDeviceItem();
 
