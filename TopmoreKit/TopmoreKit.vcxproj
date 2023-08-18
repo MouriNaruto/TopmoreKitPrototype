@@ -15,7 +15,7 @@
     <MileProjectLegalCopyright>© TOPMORE. All rights reserved.</MileProjectLegalCopyright>
     <MileProjectOriginalFilename>TopmoreKit.exe</MileProjectOriginalFilename>
     <MileProjectProductName>TOPMORE Kit</MileProjectProductName>
-    <MileProjectVersion>23.204.1.1</MileProjectVersion>
+    <MileProjectVersion>1.0.0.0</MileProjectVersion>
     <MileProjectVersionTag Condition="false">Alpha 1</MileProjectVersionTag>
   </PropertyGroup>
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.Default.props" />
